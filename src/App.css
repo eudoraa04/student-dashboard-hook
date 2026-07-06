@@ -1,90 +1,33 @@
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#eef2ff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.container{
-display:flex;
-min-height:100vh;
+body {
+  background: #f4f6f9;
 }
 
-.sidebar{
-width:250px;
-background:#8b5cf6;
-color:white;
-padding:20px;
-box-sizing:border-box;
+.app {
+  display: flex;
 }
 
-.sidebar ul{
-list-style:none;
-padding:0;
+.main-content {
+  margin-left: 260px; /* Sidebar width */
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background: #f4f6f9;
+
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Keep content at top */
+
+  padding: 40px;
 }
 
-.sidebar li{
-padding:15px;
-cursor:pointer;
-}
-
-.main{
-flex:1;
-padding:30px;
-}
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:20px;
-width:220px;
-box-sizing:border-box;
-box-shadow:0px 5px 10px rgba(0,0,0,0.1);
-}
-
-.chart{
-background:white;
-margin-top:30px;
-margin-bottom:30px;
-padding:20px;
-border-radius:20px;
-width:100%;
-box-sizing:border-box;
-box-shadow:0px 5px 10px rgba(0,0,0,0.1);
-}
-
-@media screen and (max-width:768px){
-
-.container{
-flex-direction:column;
-}
-
-.sidebar{
-width:100%;
-height:auto;
-}
-
-.main{
-padding:15px;
-}
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.card{
-width:90%;
-max-width:300px;
-}
-
-.chart{
-width:90%;
-}
-
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust this to make it wider or narrower */
+  margin: 0 auto;
 }
