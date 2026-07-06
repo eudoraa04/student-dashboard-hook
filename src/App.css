@@ -29,3 +29,34 @@ body {
   width: 100%;
   max-width: 1200px;         /* Center the dashboard */
 }
+@media screen and (max-width:768px){
+
+.container{
+display:flex;
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+height:auto;
+}
+
+.main{
+padding:15px;
+}
+
+.cards{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.card{
+width:90%;
+}
+
+.chart{
+width:90%;
+}
+
+}
